@@ -9,12 +9,12 @@ public class CyclicRotation {
 		print(solution(new int[] {1,2,3,4}, 4));
 	}
 	
+	// https://app.codility.com/demo/results/trainingUWMRMK-AWK/
 	private static int[] solution(int[] A, int K) {
         int length = A.length;
         int[] result = new int[length];
-        // Loop A's length.
+        // Repeat the size of array A.
         for (int idx = 0; idx < length; idx++) {
-            // Move A[idx] value to result array.
             result[(idx + K) % length] = A[idx];
         }
         return result;
