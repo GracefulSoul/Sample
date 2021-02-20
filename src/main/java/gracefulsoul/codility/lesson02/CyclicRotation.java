@@ -1,4 +1,4 @@
-package gracefulsoul.codility.lesson01;
+package gracefulsoul.codility.lesson02;
 
 import java.util.Arrays;
 
