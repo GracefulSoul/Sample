@@ -15,7 +15,7 @@ public class CyclicRotation {
         // Loop A's length.
         for (int idx = 0; idx < length; idx++) {
             // Move A[idx] value to result array.
-            result[(length + idx + K) % length] = A[idx];
+            result[(idx + K) % length] = A[idx];
         }
         return result;
 	}
