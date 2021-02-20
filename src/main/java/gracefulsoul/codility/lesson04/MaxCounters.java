@@ -1,9 +1,11 @@
 package gracefulsoul.codility.lesson04;
 
+import java.util.Arrays;
+
 public class MaxCounters {
 
 	public static void main(String[] args) {
-		solution(5, new int[] {3,4,4,6,1,4,4});
+		print(solution(5, new int[] {3,4,4,6,1,4,4}));
 	}
 	
 	// https://app.codility.com/demo/results/trainingQ5G9KP-C39/
@@ -34,6 +36,10 @@ public class MaxCounters {
 			}
 		}
 		return result;
+	}
+	
+	private static void print(int[] array) {
+		System.out.println(Arrays.toString(array));
 	}
 
 }
