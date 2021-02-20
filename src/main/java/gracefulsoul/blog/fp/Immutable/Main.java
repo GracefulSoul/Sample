@@ -1,4 +1,4 @@
-package gracefulsoul.fp.Immutable;
+package gracefulsoul.blog.fp.Immutable;
 
 import java.lang.reflect.Field;
 

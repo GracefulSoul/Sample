@@ -1,4 +1,4 @@
-package gracefulsoul.oop.inheritance;
+package gracefulsoul.blog.oop.inheritance;
 
 public class Music extends Media {
 	public Music(String name) {

@@ -1,4 +1,4 @@
-package gracefulsoul.fp.firstclass;
+package gracefulsoul.blog.fp.firstclass;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

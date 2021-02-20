@@ -1,4 +1,4 @@
-package gracefulsoul.oop;
+package gracefulsoul.blog.oop;
 
 public class Class {
 	// It can only be used inside.

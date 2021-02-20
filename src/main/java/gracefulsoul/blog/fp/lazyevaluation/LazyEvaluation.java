@@ -1,4 +1,4 @@
-package gracefulsoul.fp.lazyevaluation;
+package gracefulsoul.blog.fp.lazyevaluation;
 
 import java.util.List;
 import java.util.stream.Collectors;

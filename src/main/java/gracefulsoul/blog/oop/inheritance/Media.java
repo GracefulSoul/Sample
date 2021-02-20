@@ -1,4 +1,4 @@
-package gracefulsoul.oop.inheritance;
+package gracefulsoul.blog.oop.inheritance;
 
 public class Media {
 	public String name;

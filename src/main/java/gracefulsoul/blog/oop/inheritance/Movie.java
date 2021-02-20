@@ -1,4 +1,4 @@
-package gracefulsoul.oop.inheritance;
+package gracefulsoul.blog.oop.inheritance;
 
 public class Movie extends Media {
 	public Movie(String name) {

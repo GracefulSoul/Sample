@@ -1,4 +1,4 @@
-package gracefulsoul.fp.type;
+package gracefulsoul.blog.fp.type;
 
 import java.time.LocalDateTime;
 

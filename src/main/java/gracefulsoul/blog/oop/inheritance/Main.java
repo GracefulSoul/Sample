@@ -1,4 +1,4 @@
-package gracefulsoul.oop.inheritance;
+package gracefulsoul.blog.oop.inheritance;
 
 /*public class Main {
 	public static void main(String[] args) {

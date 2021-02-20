@@ -1,4 +1,4 @@
-package gracefulsoul.fp;
+package gracefulsoul.blog.fp;
 
 import java.util.ArrayList;
 import java.util.List;
