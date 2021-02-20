@@ -1,7 +1,6 @@
 package gracefulsoul.codility.lesson04;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.Arrays;
 
 public class PermCheck {
 
@@ -9,16 +8,14 @@ public class PermCheck {
 		System.out.println(solution(new int[] {4,1,3,2}));
 	}
 	
-	// https://app.codility.com/demo/results/trainingDCMXJY-HDN/
+	// https://app.codility.com/demo/results/trainingJZTBZU-BE7/
 	private static int solution(int[] A) {
-		Set<Integer> numSet = new HashSet<>();
-        for (int num : A) {
-            if (num > A.length || numSet.contains(num)) { // If over than array's size or duplicated number.
-                return 0;
-            } else {
-                numSet.add(num);
-            }
-        }
+		Arrays.sort(A);
+		for (int idx = 0; idx < A.length; idx++) {
+			if (A[idx] != idx + 1) {
+				return 0;
+			}
+		}
         return 1;
 	}
 	
