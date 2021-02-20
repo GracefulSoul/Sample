@@ -19,9 +19,6 @@ public class MissingInteger {
 				numSet.add(num);
 			}
 		}
-		if (numSet.size() == 0) {
-			return 1;
-		}
 		for (int idx = 1; idx <= Integer.MAX_VALUE; idx++) {
 			if (!numSet.contains(idx)) {
 				return idx;
