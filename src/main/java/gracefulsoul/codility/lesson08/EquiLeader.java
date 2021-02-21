@@ -11,47 +11,47 @@ public class EquiLeader {
 	}
 	
 	private static int solution(int[] A) {
-        Vector<Integer> record = getRecord(A);
-        int result = 0;
-        for (int idx = 0; idx < A.length; idx++) {
-        	int left = record.elementAt(idx);
-        	int right = record.lastElement() - left;
-        	int equiOne = ((idx + 1) / 2) + 1;
-        	int equiTwo = ((A.length - (idx + 1)) / 2) + 1;
-        	if ((left >= equiOne) && (right >= equiTwo)) {
-        		result++;
-        	}
-        }
-        return result;
-    }
+		Vector<Integer> record = getRecord(A);
+		int result = 0;
+		for (int idx = 0; idx < A.length; idx++) {
+			int left = record.elementAt(idx);
+			int right = record.lastElement() - left;
+			int equiOne = ((idx + 1) / 2) + 1;
+			int equiTwo = ((A.length - (idx + 1)) / 2) + 1;
+			if ((left >= equiOne) && (right >= equiTwo)) {
+				result++;
+			}
+		}
+		return result;
+	}
 	
 	private static Vector<Integer> getRecord(int[] A) {
-        Vector<Integer> record = new Vector<>();
-        int leader = getLeader(A);
-        int count = 0;
-        for (int num : A) {
-        	if (num == leader) {
-        		count++;
-        	}
-        	record.add(count);
-        }
-        return record;
+		Vector<Integer> record = new Vector<>();
+		int leader = getLeader(A);
+		int count = 0;
+		for (int num : A) {
+			if (num == leader) {
+				count++;
+			}
+			record.add(count);
+		}
+		return record;
 	}
 	
 	private static int getLeader(int[] A) {
 		Map<Integer, Integer> map = new HashMap<>();
-        for (int num : A) {
-        	map.put(num, map.getOrDefault(num, 0) + 1);
-        }
-        int num = 0;
-        int max = 0;
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-        	if (entry.getValue() > max) {
-        		num = entry.getKey();
-        		max = entry.getValue();
-        	}
-        }
-        return num;
+		for (int num : A) {
+			map.put(num, map.getOrDefault(num, 0) + 1);
+		}
+		int num = 0;
+		int max = 0;
+		for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+			if (entry.getValue() > max) {
+				num = entry.getKey();
+				max = entry.getValue();
+			}
+		}
+		return num;
 	}
 
 }
