@@ -8,7 +8,7 @@ public class StoneWall {
 		System.out.println(solution(new int[] {8,8,5,7,9,8,7,4,8}));
 	}
 
-	// https://app.codility.com/demo/results/training6V5C8T-EW8/
+	// https://app.codility.com/demo/results/trainingJSWNH2-6PS/
 	public static int solution(int[] H) {
 		int result = 0;
 		Stack<Integer> stack = new Stack<>();
