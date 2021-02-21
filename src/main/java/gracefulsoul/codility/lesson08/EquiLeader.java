@@ -10,6 +10,7 @@ public class EquiLeader {
 		System.out.println(solution(new int[] {4,3,4,4,4,2}));
 	}
 	
+	// https://app.codility.com/demo/results/trainingT4DHJ8-XJZ/
 	private static int solution(int[] A) {
 		Vector<Integer> record = getRecord(A);
 		int result = 0;
