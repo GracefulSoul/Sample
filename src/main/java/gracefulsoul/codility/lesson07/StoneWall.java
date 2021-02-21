@@ -14,10 +14,10 @@ public class StoneWall {
 		Stack<Integer> stack = new Stack<>();
 		for(int height : H) {
 			while (!stack.isEmpty() && stack.peek() > height) {
-				stack.pop(); // Initialing block's size.
+				stack.pop(); // Remove higher than new stone wall.
 			}
 			if (stack.isEmpty() || stack.peek() < height) {
-				stack.push(height); // New block's size.
+				stack.push(height); // Add new stone wall.
 				result++;
 			}
 		}
