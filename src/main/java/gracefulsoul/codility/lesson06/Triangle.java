@@ -9,14 +9,14 @@ public class Triangle {
 		System.out.println(solution(new int[] {10, 50, 5, 1}));
 	}
 	
+	// https://app.codility.com/demo/results/trainingS8CWFP-THS/
 	private static int solution(int[] A) {
-		int length = A.length;
-		if (3 > length) {
+		if (A.length < 3) {
 			return 0;
 		}
 		Arrays.sort(A);
-		for (int i = 0; i < length - 2; i++) {
-			if ((long)A[i] + (long)A[i + 1] > A[i + 2]) {
+		for (int idx = 0; idx < A.length - 2; idx++) {
+			if ((long)A[idx] + (long)A[idx + 1] > A[idx + 2]) {
 				return 1;
 			}
 		}
