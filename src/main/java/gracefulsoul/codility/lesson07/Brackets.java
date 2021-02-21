@@ -35,6 +35,6 @@ public class Brackets {
 			}
 		}
 		return stack.isEmpty() ? 1 : 0;
-    }
+	}
 
 }
