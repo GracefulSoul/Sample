@@ -4,7 +4,6 @@ public class MinAvgTwoSlice {
 
 	public static void main(String[] args) {
 		System.out.println(solution(new int[] {4,2,2,5,1,5,8}));
-		System.out.println(solution(new int[] {-3, -5, -8, -4, -10}));
 	}
 	
 	// https://app.codility.com/demo/results/training8NYBNN-9FU/
