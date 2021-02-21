@@ -10,7 +10,7 @@ public class Distinct {
 	
 	// https://app.codility.com/demo/results/trainingBUTFHG-DS3/
 	public static int solution(int[] A) {
-        return (int) Arrays.stream(A).distinct().count();
-    }
+		return (int) Arrays.stream(A).distinct().count();
+	}
 
 }
