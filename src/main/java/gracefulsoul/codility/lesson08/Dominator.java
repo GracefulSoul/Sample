@@ -11,7 +11,7 @@ public class Dominator {
 	
 	private static int solution(int[] A) {
 		Map<Integer, Integer> map = new HashMap<>();
-		// Calcualte how many numbers are in the array(A).
+		// Calculate how many numbers are in the array(A).
 		for (int num : A) {
 			map.put(num, map.getOrDefault(num, 0) + 1);
 		}
@@ -34,6 +34,6 @@ public class Dominator {
 			}
 		}
 		return -1;
-    }
+	}
 
 }
