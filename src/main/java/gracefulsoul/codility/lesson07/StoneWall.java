@@ -10,18 +10,18 @@ public class StoneWall {
 
 	// https://app.codility.com/demo/results/training6V5C8T-EW8/
 	public static int solution(int[] H) {
+		int result = 0;
 		Stack<Integer> stack = new Stack<>();
-		int count = 0;
 		for(int height : H) {
 			while (!stack.isEmpty() && stack.peek() > height) {
 				stack.pop(); // Initialing block's size.
 			}
 			if (stack.isEmpty() || stack.peek() < height) {
 				stack.push(height); // New block's size.
-				count++;
+				result++;
 			}
 		}
-		return count;
+		return result;
 	}
 	
 }
