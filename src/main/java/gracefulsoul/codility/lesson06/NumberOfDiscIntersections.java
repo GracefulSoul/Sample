@@ -23,8 +23,7 @@ public class NumberOfDiscIntersections {
 		// Calculate intersects with left and right point.
 		for (int idx = 0; idx < A.length - 1; idx++) {
 			while (num < A.length && right[idx] >= left[num]) {
-				result += num;
-				result -= idx;
+				result += num - idx;
 				num++;
 			}
 		}
