@@ -7,7 +7,8 @@ public class NumberOfDiscIntersections {
 	public static void main(String[] args) {
 		System.out.println(solution(new int[] { 1, 5, 2, 1, 4, 0 }));
 	}
-
+	
+	// https://app.codility.com/demo/results/trainingY8JCA7-Z55/
 	private static int solution(int[] A) {
 		int result = 0;
 		long[] left = new long[A.length];
