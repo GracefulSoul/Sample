@@ -1,4 +1,4 @@
-package gracefulsoul.blog.java.release10;
+package gracefulsoul.blog.java.java10;
 
 import java.util.HashMap;
 import java.util.Map;

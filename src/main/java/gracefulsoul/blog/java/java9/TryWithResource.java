@@ -1,4 +1,4 @@
-package gracefulsoul.blog.java.release09;
+package gracefulsoul.blog.java.java9;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

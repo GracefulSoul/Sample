@@ -1,4 +1,4 @@
-package gracefulsoul.blog.java.release08.lambda;
+package gracefulsoul.blog.java.java8.lambda;
 
 import java.util.stream.IntStream;
 

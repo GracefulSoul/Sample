@@ -1,4 +1,4 @@
-package gracefulsoul.blog.java.release08.dynamicloading;
+package gracefulsoul.blog.java.java8.dynamicloading;
 
 public class Greeting {
 	
