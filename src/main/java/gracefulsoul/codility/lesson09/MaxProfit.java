@@ -24,7 +24,6 @@ public class MaxProfit {
 				}
 			}
 		}
-		
 		return result;
 	}
 
