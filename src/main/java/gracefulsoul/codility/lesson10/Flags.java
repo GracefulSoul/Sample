@@ -6,7 +6,7 @@ public class Flags {
 		System.out.println(solution(new int[] {1,5,3,4,3,4,1,2,3,4,6,2}));
 	}
 	
-	// https://app.codility.com/demo/results/training7WKQU7-RPG/
+	// https://app.codility.com/demo/results/trainingUE4UWX-DGQ/
 	private static int solution(int[] A) {
 		int result = 0;
 		// Check to peak's index.
@@ -15,7 +15,7 @@ public class Flags {
 		int[] nextPeaks = getNextPeaks(peaks);
 		// Calculate count of peaks.
 		for (int idx = 1; idx < A.length; idx++) {
-			if (isCheckFlags(nextPeaks, idx)) {
+			if (isPossibleToSetOnPeak(nextPeaks, idx)) {
 				result = Math.max(result, idx);
 			}
 		}
@@ -44,13 +44,13 @@ public class Flags {
 		return nextPeaks;
 	}
 	
-	private static boolean isCheckFlags(int[] nextPeaks, int flagNum) {
+	private static boolean isPossibleToSetOnPeak(int[] nextPeaks, int point) {
 		int index = 0;
-		for (int idx = 0; idx < flagNum; idx++) {
+		for (int idx = 0; idx < point; idx++) {
 			if (index >= nextPeaks.length || nextPeaks[index] < 0) {
 				return false;
 			}
-			index = nextPeaks[index] + flagNum;
+			index = nextPeaks[index] + point;
 		}
 		return true;
 	}
