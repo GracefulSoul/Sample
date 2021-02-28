@@ -18,7 +18,10 @@ public class MaxProfit {
 			if (A[idx] < min) {
 				min = A[idx];
 			} else {
-				result = Math.max(result, A[idx] - min);
+				int temp = A[idx] - min;
+				if (result < temp) {
+					result = temp;
+				}
 			}
 		}
 		return result;
