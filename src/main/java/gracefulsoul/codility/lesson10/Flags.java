@@ -32,7 +32,6 @@ public class Flags {
 		return peaks;
 	}
 	
-	
 	private static int[] getNextPeaks(boolean[] peaks) {
 		int[] nextPeaks = new int[peaks.length];
 		int nextPeak = -1;
