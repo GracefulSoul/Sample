@@ -14,7 +14,7 @@ public class Flags {
 		// Check to next peak's index.
 		int[] nextPeaks = getNextPeaks(peaks);
 		// Calculate count of peaks.
-		for (int idx = 1; (idx - 1) * idx < A.length; idx++) {
+		for (int idx = 1; idx < A.length; idx++) {
 			if (isCheckFlags(nextPeaks, idx)) {
 				result = Math.max(result, idx);
 			}
