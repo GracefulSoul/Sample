@@ -8,18 +8,18 @@ public class Flags {
 	
 	// https://app.codility.com/demo/results/training7WKQU7-RPG/
 	private static int solution(int[] A) {
-        int result = 0;
-        // Check to peak's index.
-        boolean[] peaks = getPeaks(A);
-        // Check to next peak's index.
-        int[] nextPeaks = getNextPeaks(peaks);
-        // Calculate count of peaks.
-        for (int idx = 1; (idx - 1) * idx < A.length; idx++) {
-            if (isCheckFlags(nextPeaks, idx)) {
-                result = Math.max(result, idx);
-            }
-        }
-        return result;
+		int result = 0;
+		// Check to peak's index.
+		boolean[] peaks = getPeaks(A);
+		// Check to next peak's index.
+		int[] nextPeaks = getNextPeaks(peaks);
+		// Calculate count of peaks.
+		for (int idx = 1; (idx - 1) * idx < A.length; idx++) {
+			if (isCheckFlags(nextPeaks, idx)) {
+				result = Math.max(result, idx);
+			}
+		}
+		return result;
 	}
 	
 	private static boolean[] getPeaks(int[] A) {
