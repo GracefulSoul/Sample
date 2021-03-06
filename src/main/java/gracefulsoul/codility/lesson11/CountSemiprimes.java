@@ -7,7 +7,8 @@ public class CountSemiprimes {
 	public static void main(String[] args) {
 		print(solution(26, new int[] {1,4,16}, new int[] {26,10,20}));
 	}
-
+	
+	// https://app.codility.com/demo/results/trainingKCBQY4-U9U/
 	private static int[] solution(int N, int[] P, int[] Q) {
 		int[] result = new int[P.length];
 		int[] preSum = getPreSum(N);
@@ -51,7 +52,7 @@ public class CountSemiprimes {
 		}
 		return flags;
 	}
-
+	
 	private static void print(int[] array) {
 		Arrays.stream(array).forEach(System.out::println);
 	}
