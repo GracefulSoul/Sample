@@ -5,7 +5,7 @@ public class CommonPrimeDivisors {
 	public static void main(String[] args) {
 		System.out.println(solution(new int[] {15,10,3}, new int[] {75,30,5}));
 	}
-
+	
 	// https://app.codility.com/demo/results/trainingBVXGXR-JH5/
 	public static int solution(int[] A, int[] B) {
 		int result = 0;
