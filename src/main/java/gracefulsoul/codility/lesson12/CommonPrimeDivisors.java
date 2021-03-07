@@ -33,6 +33,7 @@ public class CommonPrimeDivisors {
 		return num1 == 1 && num2 == 1;
 	}
 	
+	
 	// Euclidean algorithm.
 	private static int getGcd(int num1, int num2) {
 		if (num1 % num2 == 0) {
