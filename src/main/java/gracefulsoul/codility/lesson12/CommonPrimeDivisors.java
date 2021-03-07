@@ -6,7 +6,7 @@ public class CommonPrimeDivisors {
 		System.out.println(solution(new int[] {15,10,3}, new int[] {75,30,5}));
 	}
 	
-	// https://app.codility.com/demo/results/trainingBVXGXR-JH5/
+	// https://app.codility.com/demo/results/trainingHCMKR3-3PJ/
 	public static int solution(int[] A, int[] B) {
 		int result = 0;
 		for (int idx = 0; idx < A.length; idx++) {
@@ -20,17 +20,16 @@ public class CommonPrimeDivisors {
 	// Check whether the sets of prime divisors of integers N and M are exactly the same.
 	private static boolean isSameDivisors(int num1, int num2) {
 		int gcd = getGcd(num1, num2);
-		int quotient1 = 0;
-		while (quotient1 != 1) {
-			quotient1 = getGcd(num1, gcd);
-			num1 /= quotient1;
+		return getDivisor(gcd, num1) == 1 && getDivisor(gcd, num2) == 1;
+	}
+	
+	private static int getDivisor(int gcd, int num) {
+		int quotient = 0;
+		while (quotient != 1) {
+			quotient = getGcd(num, gcd);
+			num /= quotient;
 		}
-		int quotient2 = 0;
-		while (quotient2 != 1) {
-			quotient2 = getGcd(num2, gcd);
-			num2 /= quotient2;
-		}
-		return num1 == 1 && num2 == 1;
+		return num;
 	}
 	
 	// Euclidean algorithm.
