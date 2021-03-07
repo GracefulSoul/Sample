@@ -18,15 +18,6 @@ public class CommonPrimeDivisors {
 	}
 	
 	// Check whether the sets of prime divisors of integers N and M are exactly the same.
-	private static int getGcd(int num1, int num2) {
-		if (num1 % num2 == 0) {
-			return num2;
-		} else {
-			return getGcd(num2, num1 % num2);
-		}
-	}
-	
-	// Euclidean algorithm.
 	private static boolean isSameDivisors(int num1, int num2) {
 		int gcd = getGcd(num1, num2);
 		int quotient1 = 0;
@@ -39,7 +30,16 @@ public class CommonPrimeDivisors {
 			quotient2 = getGcd(num2, gcd);
 			num2 /= quotient2;
 		}
-		return (num1 == 1 && num2 == 1);
+		return num1 == 1 && num2 == 1;
+	}
+	
+	// Euclidean algorithm.
+	private static int getGcd(int num1, int num2) {
+		if (num1 % num2 == 0) {
+			return num2;
+		} else {
+			return getGcd(num2, num1 % num2);
+		}
 	}
 
 }
