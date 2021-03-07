@@ -22,7 +22,7 @@ public class CommonPrimeDivisors {
 		int gcd = getGcd(num1, num2);
 		return getDivisor(gcd, num1) == 1 && getDivisor(gcd, num2) == 1;
 	}
-	
+
 	private static int getDivisor(int gcd, int num) {
 		int quotient = 0;
 		while (quotient != 1) {
