@@ -1,4 +1,4 @@
-package gracefulsoul.framework.spring.componentscan;
+package gracefulsoul.spring.componentscan;
 
 import org.springframework.core.type.classreading.MetadataReader;
 import org.springframework.core.type.classreading.MetadataReaderFactory;

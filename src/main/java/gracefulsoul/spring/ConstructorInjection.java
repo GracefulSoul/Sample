@@ -1,4 +1,4 @@
-package gracefulsoul.framework.spring;
+package gracefulsoul.spring;
 
 import org.springframework.stereotype.Component;
 

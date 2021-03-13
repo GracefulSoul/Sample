@@ -1,4 +1,4 @@
-package gracefulsoul.framework.spring;
+package gracefulsoul.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
