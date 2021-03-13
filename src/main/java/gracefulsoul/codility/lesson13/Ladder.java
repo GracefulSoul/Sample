@@ -1,11 +1,9 @@
 package gracefulsoul.codility.lesson13;
 
-import java.util.Arrays;
-
 public class Ladder {
 
 	public static void main(String[] args) {
-		print(solution(new int[] {4,4,5,5,1}, new int[] {3,2,4,3,1}));
+		solution(new int[] {4,4,5,5,1}, new int[] {3,2,4,3,1});
 	}
 	
 	// https://app.codility.com/demo/results/training2QCZB4-ZTQ/
@@ -26,10 +24,6 @@ public class Ladder {
 			fibonacci[idx] = (fibonacci[idx - 2] + fibonacci[idx - 1]) % (1 << 30);
 		}
 		return fibonacci;
-	}
-	
-	private static void print(int[] array) {
-		Arrays.stream(array).forEach(System.out::println);
 	}
 
 }
