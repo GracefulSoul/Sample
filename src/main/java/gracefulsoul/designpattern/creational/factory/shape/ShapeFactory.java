@@ -1,18 +1,18 @@
 package gracefulsoul.designpattern.creational.factory.shape;
 
 public class ShapeFactory {
-    
-    public Shape getShape(ShapeType shapeType) {
-        switch (shapeType) {
-	        case CIRCLE:
-	        	return new Circle();
-	        case RECTANGLE:
-	        	return new Rectangle();
-	        case SQUARE:
-	        	return new Square();
-        	default:
-        		return null;
-        }
-    }
-    
+
+	public Shape getShape(ShapeType shapeType) {
+		switch (shapeType) {
+			case CIRCLE:
+				return new Circle();
+			case RECTANGLE:
+				return new Rectangle();
+			case SQUARE:
+				return new Square();
+			default:
+				return null;
+		}
+	}
+
 }
