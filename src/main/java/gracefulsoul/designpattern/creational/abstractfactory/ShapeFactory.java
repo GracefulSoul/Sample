@@ -25,7 +25,7 @@ public class ShapeFactory extends AbstractFactory {
 	}
 
 	@Override
-	Color getColor(ColorType colorType) {
+	public Color getColor(ColorType colorType) {
 		return null;
 	}
 
