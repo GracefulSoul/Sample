@@ -2,7 +2,7 @@ package gracefulsoul.designpattern.creational.prototype.shape;
 
 public abstract class Shape implements Cloneable {
 
-	private String id;
+	private int id;
 	protected String type;
 
 	abstract void draw();
@@ -11,11 +11,11 @@ public abstract class Shape implements Cloneable {
 		return type;
 	}
 
-	public String getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
