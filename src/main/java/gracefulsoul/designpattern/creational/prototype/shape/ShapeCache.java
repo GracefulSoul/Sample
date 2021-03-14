@@ -13,7 +13,6 @@ public class ShapeCache {
 
 	// For each shape run database query and create shape shapeMap.put(shapeKey, shape);
 	// For example, we are adding three shapes
-
 	public static void loadCache() {
 		Circle circle = new Circle();
 		circle.setId("1");
