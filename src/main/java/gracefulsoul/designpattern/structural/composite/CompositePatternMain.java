@@ -23,7 +23,7 @@ public class CompositePatternMain {
 		headMarketing.add(clerk1);
 		headMarketing.add(clerk2);
 
-		// Print all employees of the organization
+		// Print all employees of the organization.
 		System.out.println(CEO);
 
 		for (Employee headEmployee : CEO.getSubordinates()) {
