@@ -1,0 +1,21 @@
+package gracefulsoul.designpattern.behavioral.state;
+
+import gracefulsoul.designpattern.behavioral.state.context.Context;
+import gracefulsoul.designpattern.behavioral.state.state.StartState;
+import gracefulsoul.designpattern.behavioral.state.state.StopState;
+
+public class StatePatternMain {
+
+	public static void main(String[] args) {
+		Context context = new Context();
+
+		StartState startState = new StartState();
+		startState.doAction(context);
+		System.out.println(context.getState().toString());
+
+		StopState stopState = new StopState();
+		stopState.doAction(context);
+		System.out.println(context.getState().toString());
+	}
+
+}
