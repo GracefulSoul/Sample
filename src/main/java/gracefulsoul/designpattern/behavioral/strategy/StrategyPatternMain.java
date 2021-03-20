@@ -1,19 +1,19 @@
 package gracefulsoul.designpattern.behavioral.strategy;
 
-import gracefulsoul.designpattern.behavioral.strategy.operation.Add;
-import gracefulsoul.designpattern.behavioral.strategy.operation.Multiply;
-import gracefulsoul.designpattern.behavioral.strategy.operation.Substract;
+import gracefulsoul.designpattern.behavioral.strategy.operation.AddOperation;
+import gracefulsoul.designpattern.behavioral.strategy.operation.MultiplyOperation;
+import gracefulsoul.designpattern.behavioral.strategy.operation.SubstractOperation;
 
 public class StrategyPatternMain {
 
 	public static void main(String[] args) {
-		Context context = new Context(new Add());
+		Context context = new Context(new AddOperation());
 		System.out.println("10 + 5 = " + context.executeStrategy(10, 5));
 
-		context = new Context(new Substract());
+		context = new Context(new SubstractOperation());
 		System.out.println("10 - 5 = " + context.executeStrategy(10, 5));
 
-		context = new Context(new Multiply());
+		context = new Context(new MultiplyOperation());
 		System.out.println("10 * 5 = " + context.executeStrategy(10, 5));
 	}
 

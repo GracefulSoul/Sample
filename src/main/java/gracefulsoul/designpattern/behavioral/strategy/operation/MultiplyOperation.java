@@ -1,6 +1,6 @@
 package gracefulsoul.designpattern.behavioral.strategy.operation;
 
-public class Multiply implements Operation {
+public class MultiplyOperation implements Operation {
 
 	@Override
 	public int doOperation(int num1, int num2) {
